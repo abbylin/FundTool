@@ -41,8 +41,10 @@ def stock(code):
 def history_stock(code):
     start_date = str(date.today() - timedelta(days=15))
     end_date = str(date.today())
-    df = ts.get_k_data(code, start=start_date, end=end_date)
-    temp = df[['date', 'open', 'high', 'low', 'close', 'volume']]
+    # pro = ts.pro_api('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
+    df = ts.pro_bar(ts_code=code)
+    df.to_csv(code + ".csv", encoding="utf_8_sig")
+    temp = df[['trade_date', 'open', 'high', 'low', 'close', 'vol']]
     temp = np.array(temp)
     stock_info = temp.tolist()
     # print(stock_info)
@@ -59,7 +61,7 @@ def picture(code):
         value.append(stock_info[i][4])
 
     plt.figure(figsize=(10, 3))
-    xs = [datetime.strptime(d, '%Y-%m-%d').date() for d in time]
+    xs = [datetime.strptime(d, '%Y%m%d').date() for d in time]
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
     plt.gca().xaxis.set_major_locator(mdates.DayLocator())
     plt.plot(xs, value, color="b", linewidth=1, marker='o', markerfacecolor='red',
@@ -70,7 +72,7 @@ def picture(code):
     plt.title(code)  # 图标题
     plt.grid()  # 框线
     plt.savefig(code + ".jpg")  # 保存图
-    # plt.show()  #显示图
+    plt.show()  # 显示图
 
 
 # 邮件内容
@@ -126,7 +128,7 @@ def sendemail(code, con, stock_now):
 
     try:
         smtpObj = smtplib.SMTP()
-        smtpObj.connect(mail_host, 25)
+        smtpObj.connect(mail_host)
         smtpObj.login(mail_user, mail_pass)
         print('邮箱登录成功')
         smtpObj.sendmail(
@@ -229,29 +231,40 @@ def fund_content(fund_info):
 
 
 def main():
+    ts.set_token('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
     codes = []
-    with open('code.txt', 'r') as f:
+    with open('StockCode.txt', 'r') as f:
         for line in f.readlines():
             codes.append(line.strip())
-    allcode = get_allcode()
+    # allcode = get_allcode()
+    # i = 0
+    # for code in codes:
+    #     i = i + 1
+    #     if code in allcode:
+    #         print('---------%s-----------股票：%s------------' % (i, code))
+    #         stock_now = stock(code)
+    #         con = content(stock_now)
+    #         picture(code)
+    #         # sendemail(code, con, stock_now)
+    #     else:
+    #         print('---------%s-----------基金：%s------------' % (i, code))
+    #         getFundNav(code)
+    #         fund_info = fund_now(code)
+    #         con = fund_content(fund_info)
+    #         sendemail(code, con, fund_info)
+
     i = 0
     for code in codes:
         i = i + 1
-        if code in allcode:
-            print('---------%s-----------股票：%s------------' % (i, code))
-            stock_now = stock(code)
-            con = content(stock_now)
-            picture(code)
-            sendemail(code, con, stock_now)
-        else:
-            print('---------%s-----------基金：%s------------' % (i, code))
-            getFundNav(code)
-            fund_info = fund_now(code)
-            con = fund_content(fund_info)
-            sendemail(code, con, fund_info)
+        print('---------%s-----------股票：%s------------' % (i, code))
+        # stock_now = stock(code)
+        # con = content(stock_now)
+        # picture(code)
+        history_stock(code)
+        # sendemail(code, con, stock_now)
 
 
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文
+plt.rcParams['font.sans-serif'] = ['SimSun']  # 显示中文
 plt.rcParams['axes.unicode_minus'] = False  # 负数
 
 if __name__ == "__main__":
