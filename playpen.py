@@ -20,16 +20,6 @@ from bs4 import BeautifulSoup
 StockCode_File = 'StockCode.txt'
 StockDataPath_Extend = '/StockData'
 
-# 读取待处理股票代码列表
-def readStockCodes():
-    codes = []
-    with open(StockCode_File, 'r') as f:
-        for line in f.readlines():
-            codes.append(line.strip())
-
-    return codes
-
-# 获取保存股票全部历史行情
 def prepare_history_stock(codelists):
 
     # 检查是否需要创建文件夹
@@ -49,10 +39,20 @@ def prepare_history_stock(codelists):
 
 
 def main():
-    ts.set_token('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
-    stockcodeslist = readStockCodes()
+    # ts.set_token('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
+    current_path = os.getcwd()
+    data_file = current_path + StockDataPath_Extend + "/" + "600036.SH.csv"
+    if not os.path.exists(data_file):
+        return
 
-    prepare_history_stock(stockcodeslist)
+    dataform = pd.read_csv(data_file, nrows = 30)
+    dataform.drop(['ts_code'], axis=1, inplace=True)
+    test = dataform[1:2]
+    print(dataform)
+    print(dataform[0:2])
+
+
+
 
 
 plt.rcParams['font.sans-serif'] = ['SimSun']  # 显示中文
