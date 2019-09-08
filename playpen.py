@@ -37,6 +37,9 @@ def prepare_history_stock(codelists):
             df.read_csv()
     print('---------全部获取完成----------------')
 
+def dataform_test():
+    df = pd.DataFrame(np.random.rand(4, 4), columns=list)
+
 
 def main():
     # ts.set_token('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
@@ -47,6 +50,7 @@ def main():
 
     dataform = pd.read_csv(data_file, nrows = 30)
     dataform.drop(['ts_code'], axis=1, inplace=True)
+    dataform.drop([dataform.columns[[0]]], axis=1, inplace=True)
     test = dataform[1:2]
     print(dataform)
     print(dataform[0:2])

@@ -42,10 +42,11 @@ def history_stock(code):
     start_date = str(date.today() - timedelta(days=15))
     end_date = str(date.today())
     # pro = ts.pro_api('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
-    df = ts.pro_bar(ts_code=code)
-    df.to_csv(code + ".csv", encoding="utf_8_sig")
+    df = ts.pro_bar(ts_code=code, start_date = start_date, end_date = end_date)
+    # df.to_csv(code + ".csv", encoding="utf_8_sig")
     temp = df[['trade_date', 'open', 'high', 'low', 'close', 'vol']]
-    temp = np.array(temp)
+    temp.to_csv('testResult.csv', index=None)
+    newData = pd.read_csv('testResult.csv')
     stock_info = temp.tolist()
     # print(stock_info)
     return stock_info
@@ -232,10 +233,10 @@ def fund_content(fund_info):
 
 def main():
     ts.set_token('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
-    codes = []
-    with open('StockCode.txt', 'r') as f:
-        for line in f.readlines():
-            codes.append(line.strip())
+    codes = ['600036.SH']
+    # with open('TestCode.txt', 'r') as f:
+    #     for line in f.readlines():
+    #         codes.append(line.strip())
     # allcode = get_allcode()
     # i = 0
     # for code in codes:
