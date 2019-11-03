@@ -49,12 +49,12 @@ def prepare_history_stock(codelists):
         if not os.path.exists(stock_history_path):
             print('------------------股票：%s------------' % code)
             temp = ts.pro_bar(ts_code=code, adj='hfq')
-            df_hfq = temp[['trade_date', 'open', 'high', 'low', 'close', 'change', 'pct_chg', 'vol', 'amount']]
+            df_hfq = temp[['trade_date', 'close', 'change', 'pct_chg', 'vol', 'amount']]
             temp = ts.pro_bar(ts_code=code)
             df_default = temp[['trade_date', 'close']]
             df_default.rename(columns={'close':'actual_close'}, inplace=True)
-            result = pd.merge(df_hfq, df_default, on='trade_date')
-            finaldf = result[['trade_date', 'open', 'high', 'low', 'close', 'actual_close', 'change', 'pct_chg', 'vol', 'amount']]
+            result = pd.merge(df_hfq, df_default, on='trade_date', how='inner')
+            finaldf = result[['trade_date', 'close', 'actual_close', 'change', 'pct_chg', 'vol', 'amount']]
             finaldf.to_csv(stock_history_path, encoding="utf_8_sig", index=None)
 
         else:
@@ -63,23 +63,20 @@ def prepare_history_stock(codelists):
             start_date = datetime.strptime(last_date, '%Y%m%d').date() + timedelta(days=1)
             if start_date < date.today():
                 temp = ts.pro_bar(ts_code=code, adj='hfq', start_date=str(start_date))
-                bulking_df_hfq = temp[['trade_date','open','high','low','close','pre_close','change','pct_chg','vol','amount']]
+                bulking_df_hfq = temp[['trade_date', 'close','change','pct_chg','vol','amount']]
                 temp = ts.pro_bar(ts_code=code, start_date=str(start_date))
                 bulking_df_default = temp[['trade_date', 'close']]
                 bulking_df_default.rename(columns={'close':'actual_close'}, inplace=True)
 
                 if len(bulking_df_hfq) > 0:
-                    bulking_df = pd.merge(bulking_df_hfq, bulking_df_default, inplace=True)
+                    bulking_df = pd.merge(bulking_df_hfq, bulking_df_default, on='trade_date', how='inner')
                     result = pd.concat([bulking_df, df], ignore_index=True)
-                    finaldf = result[['trade_date', 'open', 'high', 'low', 'close', 'actual_close', 'change', 'pct_chg', 'vol','amount']]
+                    finaldf = result[['trade_date', 'close', 'actual_close', 'change', 'pct_chg', 'vol','amount']]
                     finaldf.to_csv(stock_history_path, encoding="utf_8_sig", index=None)
 
 
 
     print('---------全部获取完成----------------')
-
-def do_calculations(code, name):
-    path =
 
 def main():
     ts.set_token('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
@@ -87,9 +84,6 @@ def main():
 
     prepare_history_stock(stockcodeslist)
 
-
-plt.rcParams['font.sans-serif'] = ['SimSun']  # 显示中文
-plt.rcParams['axes.unicode_minus'] = False  # 负数
 
 if __name__ == "__main__":
     main()
