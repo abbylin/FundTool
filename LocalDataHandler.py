@@ -64,8 +64,6 @@ def avg_price_handlingforItem(df, current_row):
     if (current_index + 120) < total_rows:
         avg_120 = df[current_index+1: current_index+120]['close'].mean()
 
-
-
     ret = {'trade_date':getattr(current_row, "trade_date"),
            'avg_20':round(avg_20, 2),
            'avg_40':round(avg_40, 2),
@@ -73,7 +71,11 @@ def avg_price_handlingforItem(df, current_row):
            'avg_90':round(avg_90, 2),
            'avg_120':round(avg_120, 2)}
 
+    return ret
+
 def raise_days_handlingforItem(df, current_row):
+    current_index = getattr(current_row, "Index")
+    close = getattr(current_row, "close")
     target_price_10 = close * 1.1
     target_price_15 = close * 1.15
     target_price_20 = close *1.2
@@ -81,23 +83,20 @@ def raise_days_handlingforItem(df, current_row):
     count_15 = 0
     count_20 = 0
 
-    if (not close_item >= target_price_10) and (not percent_10_checked):
-        count_10 += 1
-    else:
-        percent_10_checked = True
+    if current_row > 0:
+        dataform = df[:current_index-1]
+        for idx in reversed(dataform.index):
+            price = getattr(dataform.iloc[idx], "close")
+            if price < target_price_10:
+                count_10 += 1
+            else:
+                break
 
-    if (not close_item >= target_price_15) and (not percent_15_checked):
-        count_15 += 1
-    else:
-        percent_15_checked = True
-
-    if (not close_item >= target_price_20) and (not percent_20_checked):
-        count_20 += 1
-    else:
-        percent_20_checked = True
+    ret = {'count_10':count_10}
+    return ret
 
 
-def main():
+def stocksDataProcessing():
     # ts.set_token('a9b8428d9e00c4b3f02deca1e4f7d9ab118a50e1af08cfca00a9ea11')
     current_path = os.getcwd()
     data_file = current_path + StockDataPath_Extend + "/" + "招商银行/" + "600036.SH.csv"
