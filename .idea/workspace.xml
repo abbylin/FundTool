@@ -2,120 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c513e6b-7a1d-48c5-9d47-d48f007b4610" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TSTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TSTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataCatcher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FundDataCatcher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocalDataHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/LocalDataHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockData/000651.SZ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockData/600036.SH.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockData/600519.SH.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockData/601318.SH.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backupcode/DataCatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backupcode/DataCatcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playpen.py" beforeDir="false" afterPath="$PROJECT_DIR$/playpen.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataCatcher.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///anaconda3/lib/python3.7/site-packages/bs4/element.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14310">
-              <caret line="956" column="4" selection-start-line="956" selection-start-column="4" selection-end-line="956" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FileTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="47" />
-              <folding>
-                <element signature="e#157#167#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TSMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="121" column="14" selection-start-line="121" selection-start-column="14" selection-end-line="121" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TSTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-              <folding>
-                <element signature="e#82#97#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///anaconda3/lib/python3.7/site-packages/pandas/core/generic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="5066" selection-start-line="5066" selection-end-line="5066" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///anaconda3/lib/python3.7/_strptime.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="358" selection-start-line="358" selection-end-line="358" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///anaconda3/lib/python3.7/site-packages/pandas/core/indexing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="1251" selection-start-line="1251" selection-end-line="1251" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///anaconda3/lib/python3.7/site-packages/tushare/pro/data_pro.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-106">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,18 +37,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/FileTest.py" />
-        <option value="$PROJECT_DIR$/DataCatcher.py" />
-        <option value="$PROJECT_DIR$/TSMain.py" />
-        <option value="$PROJECT_DIR$/Backup.py" />
-        <option value="$PROJECT_DIR$/code.txt" />
-        <option value="$PROJECT_DIR$/TSTest.py" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -155,74 +44,23 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="247" />
-    <option name="y" value="126" />
-    <option name="width" value="1966" />
-    <option name="height" value="1123" />
+  <component name="ProjectId" id="1cYsEAegJ8yf7GyV3p5T4RjomjL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FundsTool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FundsTool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FundsTool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="FundsTool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="FundsTool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FundsTool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="tushare" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FundsTool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backupcode" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.TSTest">
+  <component name="RunManager" selected="Python.DataCatcher">
     <configuration name="DataCatcher" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FundsTool" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,7 +73,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataCatcher.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backupcode/DataCatcher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FundToolMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FundsTool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FundToolMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LocalDataHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FundsTool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LocalDataHandler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -265,10 +145,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="playpen" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FundsTool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/playpen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TSTest" />
         <item itemvalue="Python.DataCatcher" />
+        <item itemvalue="Python.playpen" />
+        <item itemvalue="Python.LocalDataHandler" />
+        <item itemvalue="Python.FundToolMain" />
+        <item itemvalue="Python.TSTest" />
       </list>
     </recent_temporary>
   </component>
@@ -285,37 +189,63 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="247" y="126" width="1966" height="1123" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12493573" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2541222" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3685742" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="WindowStateProjectService">
+    <state width="1415" height="466" key="DebuggerActiveHint" timestamp="1593331079243">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1415" height="466" key="DebuggerActiveHint/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593331079243" />
+    <state x="2758" y="358" key="FileChooserDialogImpl" timestamp="1590717599167">
+      <screen x="2048" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2758" y="358" key="FileChooserDialogImpl/2048.23.1920.1057/73.23.1975.1129@2048.23.1920.1057" timestamp="1590717599167" />
+    <state width="1751" height="266" key="GridCell.Tab.0.bottom" timestamp="1593332597789">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1751" height="266" key="GridCell.Tab.0.bottom/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332597789" />
+    <state width="1751" height="266" key="GridCell.Tab.0.bottom/2048.23.1920.1057/77.23.1971.1129@77.23.1971.1129" timestamp="1593331862652" />
+    <state width="1751" height="266" key="GridCell.Tab.0.center" timestamp="1593332597788">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1751" height="266" key="GridCell.Tab.0.center/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332597788" />
+    <state width="1751" height="266" key="GridCell.Tab.0.center/2048.23.1920.1057/77.23.1971.1129@77.23.1971.1129" timestamp="1593331862651" />
+    <state width="1751" height="266" key="GridCell.Tab.0.left" timestamp="1593332597788">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1751" height="266" key="GridCell.Tab.0.left/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332597788" />
+    <state width="1751" height="266" key="GridCell.Tab.0.left/2048.23.1920.1057/77.23.1971.1129@77.23.1971.1129" timestamp="1593331862650" />
+    <state width="1751" height="266" key="GridCell.Tab.0.right" timestamp="1593332597789">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1751" height="266" key="GridCell.Tab.0.right/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332597789" />
+    <state width="1751" height="266" key="GridCell.Tab.0.right/2048.23.1920.1057/77.23.1971.1129@77.23.1971.1129" timestamp="1593331862651" />
+    <state width="1751" height="266" key="GridCell.Tab.1.bottom" timestamp="1593332590528">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1751" height="266" key="GridCell.Tab.1.bottom/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332590528" />
+    <state width="1751" height="266" key="GridCell.Tab.1.center" timestamp="1593332590528">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1751" height="266" key="GridCell.Tab.1.center/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332590528" />
+    <state width="1751" height="266" key="GridCell.Tab.1.left" timestamp="1593332590527">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1751" height="266" key="GridCell.Tab.1.left/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332590527" />
+    <state width="1751" height="266" key="GridCell.Tab.1.right" timestamp="1593332590528">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="1751" height="266" key="GridCell.Tab.1.right/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332590528" />
+    <state x="2472" y="235" key="SettingsEditor" timestamp="1590717643074">
+      <screen x="2048" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2472" y="235" key="SettingsEditor/2048.23.1920.1057/73.23.1975.1129@2048.23.1920.1057" timestamp="1590717643074" />
+    <state width="882" height="492" key="XDebugger.FullValuePopup" timestamp="1593332538085">
+      <screen x="76" y="23" width="1972" height="1129" />
+    </state>
+    <state width="882" height="492" key="XDebugger.FullValuePopup/2048.23.1920.1057/76.23.1972.1129@76.23.1972.1129" timestamp="1593332538085" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataCatcher.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TSTest.py</url>
           <line>238</line>
@@ -356,6 +286,26 @@
           <line>261</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/playpen.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backupcode/DataCatcher.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backupcode/DataCatcher.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backupcode/DataCatcher.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -394,104 +344,6 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/1978755682/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27153">
-          <caret line="5180" column="8" selection-start-line="5180" selection-start-column="8" selection-end-line="5180" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///anaconda3/lib/python3.7/site-packages/bs4/element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14310">
-          <caret line="956" column="4" selection-start-line="956" selection-start-column="4" selection-end-line="956" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataCatcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TSMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="121" column="14" selection-start-line="121" selection-start-column="14" selection-end-line="121" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///anaconda3/lib/python3.7/site-packages/pandas/core/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="1251" selection-start-line="1251" selection-end-line="1251" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///anaconda3/lib/python3.7/_strptime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="358" selection-start-line="358" selection-end-line="358" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FileTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="47" />
-          <folding>
-            <element signature="e#157#167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///anaconda3/lib/python3.7/site-packages/tushare/pro/data_pro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///anaconda3/lib/python3.7/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="5066" selection-start-line="5066" selection-end-line="5066" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TSTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-          <folding>
-            <element signature="e#82#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

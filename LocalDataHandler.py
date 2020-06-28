@@ -103,25 +103,13 @@ def stocksDataProcessing():
     if not os.path.exists(data_file):
         return
 
-    dataform = pd.read_csv(data_file, nrows=100)
+    dataform = pd.read_csv(data_file)
     total_rows = dataform.shape[0]
     for row in dataform.itertuples(index=True, name='Pandas'):
         index = getattr(row, "Index")
-        if hasattr(row, "avg_20") and hasattr(row, "avg_40") and
-        if index != (total_rows-1):
-            avg_price_handlingforItem(dataform[index+1:], row)
-            # close = getattr(row, "close")
-            # pre_close = dataform.loc[index+1, 'close']
-            # ratio = round((close-pre_close)/close*100, 2)
-            # change_Ratios[index] = ratio
+        if not (hasattr(row, "avg_20") and hasattr(row, "avg_40") and hasattr(row, "avg_60") and hasattr(row, "avg_90") and hasattr(row, "avg_120")):
+           ret = avg_price_handlingforItem(dataform[index+1:], row)
 
-    # dataform.insert(4, 'change_ratio', change_Ratios)
-    # print(dataform.loc[:, ["trade_date", "close", "change_ratio", "actual_close"]])
-    # dataform.drop(['ts_code'], axis=1, inplace=True)
-    # dataform.drop([dataform.columns[[0]]], axis=1, inplace=True)
-    # test = dataform[1:2]
-    # print(dataform)
-    # print(dataform[0:2])
 
 
 if __name__ == "__main__":

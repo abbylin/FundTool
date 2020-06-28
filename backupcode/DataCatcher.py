@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from prettytable import *
+from lxml import  etree
 
 
 def get_url(url, params=None, proxies=None):
@@ -13,8 +14,22 @@ def get_fund_data(code, start='', end=''):
     record = {'Code': code}
     url = 'http://fund.eastmoney.com/f10/F10DataApi.aspx'
     # params = {'type': 'lsjz', 'code': code, 'page': 1, 'per': 20, 'sdate': start, 'edate': end}
-    params = {'type': 'lsjz', 'code': code, 'page': 1, 'per':3}
-    html = get_url(url, params)
+    params = {'type': 'lsjz', 'code': code, 'page': 1, 'per': 3}
+    text_response = get_url(url, params)
+    list_info = []
+    text_html = re.findall('content:"(.*?)",records:', text_response)[0]
+    current_page = re.findall('curpage:"(.*?)"\"}', text_response)[0]
+    print(text_html)
+    html = etree.HTML(text_html)
+    print(html)
+    html_data = html.xpath('//tr/td')
+    test = html
+    for info in html_data:
+        list_info.append(info.text)
+
+    print(html_data, '\n', '===' * 20)
+    print(list_info)
+
     soup = BeautifulSoup(html, 'html.parser')
     records = []
     totalPage = 0

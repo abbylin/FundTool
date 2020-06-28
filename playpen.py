@@ -24,3 +24,4 @@ if os.path.exists(data_file):
     print(dataform)
     for row in dataform.itertuples(index=True, name='Pandas'):
         print(getattr(row, "Index"))
+        print(row['close'])
